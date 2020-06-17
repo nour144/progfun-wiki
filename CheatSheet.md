@@ -28,6 +28,29 @@ There are certainly a lot of things that can be improved! If you would like to c
     def myFct(bindings: Int*) = { ... } // bindings is a sequence of int, containing a varying # of arguments
 ```
 
+```scale
+    call by value :
+    sumOfSquares(3, 2+2)
+    sumOfSquares(3, 4)
+    square(3) + square(4)
+    3 * 3 + square(4)
+    9 + square(4)
+    9 + 4 *4 
+    9 + 16
+    25
+
+    call by name:
+    sumOfSquares(3, 2+2)
+    square(3) + square(2+2)
+    3 * 3 + square( 2+2)
+    9 + square(2+2) 
+    9 + (2+2) * (2+2)
+    9 + 4 * (2 * 2)
+    9 + 4 * 4
+    9 + 16
+    25
+
+```
 ## Higher order functions
 
 These are functions that take a function as a parameter or return functions.
