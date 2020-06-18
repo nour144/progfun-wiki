@@ -51,6 +51,14 @@ There are certainly a lot of things that can be improved! If you would like to c
     25
 
 ```
+
+## Conditions
+if-else in Scala are used like an expression not like a statement
+example:
+```scala
+def abs(x : Int) = if (x >=0) x else -x
+```
+
 ## Higher order functions
 
 These are functions that take a function as a parameter or return functions.
