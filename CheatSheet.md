@@ -54,7 +54,7 @@ There are certainly a lot of things that can be improved! If you would like to c
 
 ## Conditions
 if-else in Scala are used like an expression not like a statement
-example:
+<br>example:
 ```scala
 def abs(x : Int) = if (x >=0) x else -x
 ```
