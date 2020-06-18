@@ -57,6 +57,10 @@ if-else in Scala are used like an expression not like a statement
 <br>example:
 ```scala
 def abs(x : Int) = if (x >=0) x else -x
+
+defining and and or 
+def and(x:Boolean, y: =>Boolean) = if(!x) false else y
+def or(x: Boolean , y: =>Boolean) = if(x) true else y
 ```
 
 ## Higher order functions
