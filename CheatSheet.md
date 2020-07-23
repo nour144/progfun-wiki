@@ -71,7 +71,16 @@ def abs(x : Int) = if (x >=0) x else -x
 def and(x:Boolean, y: =>Boolean) = if(!x) false else y
 def or(x: Boolean , y: =>Boolean) = if(x) true else y
 ```
-
+## Tail recursion
+- factorial using tail recursion 
+```scala
+def factorial(x: Int) = {
+ def loop(n:Int, acc:Int):Int =
+ if (n==0) acc
+ else loop(n-1, n * acc)
+ loop(x,1)
+}
+```
 ## Higher order functions
 
 These are functions that take a function as a parameter or return functions.
