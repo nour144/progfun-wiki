@@ -123,6 +123,10 @@ that value
 
 - The **groupBy** method takes a predicate function as its parameter and uses it to group elements by key and values into a Map collection.
 <br><a href = http://allaboutscala.com/tutorials/chapter-8-beginner-tutorial-using-scala-collection-functions/scala-groupby-example/><GroupBy Reference</a>
+
+-Nothing is a subtype of every other type (including Null); there exist no instances of this type. Although type Nothing is uninhabited, it is nevertheless useful in several ways. For instance, the Scala library defines a value scala.collection.immutable.Nil of type List[Nothing]. Because lists are covariant in Scala, this makes scala.collection.immutable.Nil an instance of List[T], for any element of type T.
+
+
 ## Higher order functions
 
 These are functions that take a function as a parameter or return functions.
