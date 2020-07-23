@@ -81,6 +81,18 @@ def factorial(x: Int) = {
  loop(x,1)
 }
 ```
+
+## Useful Functions
+- **filter()** method is utilized to select all elements of the list which satisfies a stated predicate.
+- **filterNot()** select all elements of the list which does not satisfies a stated predicate
+example :
+```scala
+val result = m1.filterNot(_ < 10) 
+val result1 = m1.filter(_ < 10)
+```
+- filterNot returns all elements greater than 10
+- filter returns all elements smaller than 10
+
 ## Higher order functions
 
 These are functions that take a function as a parameter or return functions.
