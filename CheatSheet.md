@@ -117,10 +117,12 @@ val result1 = m1.filter(_ < 10)
 - The primary difference is the order in which the fold operation iterates through the collection in question. **foldLeft** starts on the left side—the first item—and iterates to the right; **foldRight** starts on the right side—the last item—and iterates to the left. fold goes in no particular order.
 
 -groupBy returns a Map:
-● the key is a value in the field of the function
-● the value is the partition of the collection with the elements returning
+<br>● the key is a value in the field of the function
+<br>● the value is the partition of the collection with the elements returning
 that value
 
+- The **groupBy** method takes a predicate function as its parameter and uses it to group elements by key and values into a Map collection.
+<br><a href = http://allaboutscala.com/tutorials/chapter-8-beginner-tutorial-using-scala-collection-functions/scala-groupby-example/><GroupBy Reference</a>
 ## Higher order functions
 
 These are functions that take a function as a parameter or return functions.
