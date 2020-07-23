@@ -85,13 +85,41 @@ def factorial(x: Int) = {
 ## Useful Functions
 - **filter()** method is utilized to select all elements of the list which satisfies a stated predicate.
 - **filterNot()** select all elements of the list which does not satisfies a stated predicate
-example :
+<br>example :
 ```scala
 val result = m1.filterNot(_ < 10) 
 val result1 = m1.filter(_ < 10)
 ```
 - filterNot returns all elements greater than 10
 - filter returns all elements smaller than 10
+
+- **takeWhile()** returns the elements from the list as long as the stated condition is satisfied.
+<br> example:
+```scala
+// Creating a list 
+        val m1 = List(1, 2, 3, 4, 5, 7) 
+          
+        // Applying takeWhile method 
+        val result = m1.takeWhile(_ < 5)
+```
+- takeWhile will return List(1,2,3,4) because the condition will be false or not met when it reaches 5<5 
+- **dropWhile()** It returns all the elements of the list except the dropped ones.
+<br> Example:
+```scala
+// Creating a list 
+        val m1 = List(1, 3, 5, 4, 2) 
+          
+        // Applying dropWhile method 
+        val res = m1.dropWhile(x=>{x % 2 != 0}) 
+```
+- dropWhile will return List(4,2)
+
+- The primary difference is the order in which the fold operation iterates through the collection in question. **foldLeft** starts on the left side—the first item—and iterates to the right; **foldRight** starts on the right side—the last item—and iterates to the left. fold goes in no particular order.
+
+-groupBy returns a Map:
+● the key is a value in the field of the function
+● the value is the partition of the collection with the elements returning
+that value
 
 ## Higher order functions
 
