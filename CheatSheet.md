@@ -12,6 +12,9 @@ There are certainly a lot of things that can be improved! If you would like to c
 ## REPL
 - Read-Eval-Print-Loop
 
+## Def and Val
+- *def* evaluates on call and creates new function every time (new instance of Function)
+
 ## Evaluation Rules
 
 - Call by value: evaluates the function arguments before calling the function
