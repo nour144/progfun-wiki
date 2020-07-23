@@ -19,6 +19,8 @@ There are certainly a lot of things that can be improved! If you would like to c
 - **def** id is different each time, **val** id is the same each time
 - **lazy val** It evaluates when called the first time
 
+<a href = https://stackoverflow.com/questions/18887264/what-is-the-difference-between-def-and-val-to-define-a-function>Reference</a><br>
+
 ## Evaluation Rules
 
 - Call by value: evaluates the function arguments before calling the function
