@@ -13,7 +13,11 @@ There are certainly a lot of things that can be improved! If you would like to c
 - Read-Eval-Print-Loop
 
 ## Def and Val
-- *def* evaluates on call and creates new function every time (new instance of Function)
+- **def** evaluates on call and creates new function every time (new instance of Function)
+- With **def** you can get new function on every call
+- **val** evaluates when defined, **def** when called
+- **def** id is different each time, **val** id is the same each time
+- **lazy val** It evaluates when called the first time
 
 ## Evaluation Rules
 
